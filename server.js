@@ -39,7 +39,7 @@ let healthData ={
 let waterData = {
   water1: ''
 }
-const mqttClient = mqtt.connect('mqtt://127.0.0.1:1883');
+const mqttClient = mqtt.connect('http://broker.hivemq.com/');
 
 mqttClient.on('connect', function () {
   console.log('Connected to broker');
